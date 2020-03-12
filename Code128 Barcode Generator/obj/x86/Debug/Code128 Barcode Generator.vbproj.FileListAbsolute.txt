@@ -1,0 +1,23 @@
+C:\Users\BesarAir\AppData\Local\Temporary Projects\Code128 Barcode Generator\bin\Debug\Code128 Barcode Generator.exe
+C:\Users\BesarAir\AppData\Local\Temporary Projects\Code128 Barcode Generator\bin\Debug\Code128 Barcode Generator.pdb
+C:\Users\BesarAir\AppData\Local\Temporary Projects\Code128 Barcode Generator\bin\Debug\Code128 Barcode Generator.xml
+C:\Users\BesarAir\AppData\Local\Temporary Projects\Code128 Barcode Generator\obj\x86\Debug\Code128_Barcode_Generator.Form1.resources
+C:\Users\BesarAir\AppData\Local\Temporary Projects\Code128 Barcode Generator\obj\x86\Debug\Code128_Barcode_Generator.Resources.resources
+C:\Users\BesarAir\AppData\Local\Temporary Projects\Code128 Barcode Generator\obj\x86\Debug\Code128 Barcode Generator.vbproj.GenerateResource.Cache
+C:\Users\BesarAir\AppData\Local\Temporary Projects\Code128 Barcode Generator\obj\x86\Debug\Code128 Barcode Generator.exe
+C:\Users\BesarAir\AppData\Local\Temporary Projects\Code128 Barcode Generator\obj\x86\Debug\Code128 Barcode Generator.xml
+C:\Users\BesarAir\AppData\Local\Temporary Projects\Code128 Barcode Generator\obj\x86\Debug\Code128 Barcode Generator.pdb
+C:\Users\Rian\Desktop\Code128 Barcode Generator\Code128 Barcode Generator\bin\Debug\Code128 Barcode Generator.exe.config
+C:\Users\Rian\Desktop\Code128 Barcode Generator\Code128 Barcode Generator\obj\x86\Debug\Code128 Barcode Generator.exe
+C:\Users\Rian\Desktop\Code128 Barcode Generator\Code128 Barcode Generator\obj\x86\Debug\Code128 Barcode Generator.xml
+C:\Users\Rian\Desktop\Code128 Barcode Generator\Code128 Barcode Generator\obj\x86\Debug\Code128 Barcode Generator.pdb
+C:\Users\Rian\Desktop\Code128 Barcode Generator\Code128 Barcode Generator\bin\Debug\Code128 Barcode Generator.exe
+C:\Users\Rian\Desktop\Code128 Barcode Generator\Code128 Barcode Generator\bin\Debug\Code128 Barcode Generator.pdb
+C:\Users\Rian\Desktop\Code128 Barcode Generator\Code128 Barcode Generator\bin\Debug\Code128 Barcode Generator.xml
+C:\Users\Rian\Desktop\Code128 Barcode Generator\Code128 Barcode Generator\obj\x86\Debug\Code128_Barcode_Generator.Form1.resources
+C:\Users\Rian\Desktop\Code128 Barcode Generator\Code128 Barcode Generator\obj\x86\Debug\Code128_Barcode_Generator.Resources.resources
+C:\Users\Rian\Desktop\Code128 Barcode Generator\Code128 Barcode Generator\obj\x86\Debug\Code128 Barcode Generator.vbproj.GenerateResource.Cache
+C:\Users\Rian\Desktop\Chrisia's Barcode\Code128 Barcode Generator\bin\Debug\Code128 Barcode Generator.exe.config
+C:\Users\Rian\Desktop\Chrisia's Barcode\Code128 Barcode Generator\obj\x86\Debug\Code128 Barcode Generator.exe
+C:\Users\Rian\Desktop\Chrisia's Barcode\Code128 Barcode Generator\obj\x86\Debug\Code128 Barcode Generator.xml
+C:\Users\Rian\Desktop\Chrisia's Barcode\Code128 Barcode Generator\obj\x86\Debug\Code128 Barcode Generator.pdb
