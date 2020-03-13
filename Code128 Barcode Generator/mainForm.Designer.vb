@@ -74,7 +74,7 @@ Partial Class mainForm
         Me.ItemNoTextBox.Location = New System.Drawing.Point(263, 56)
         Me.ItemNoTextBox.Name = "ItemNoTextBox"
         Me.ItemNoTextBox.Size = New System.Drawing.Size(220, 31)
-        Me.ItemNoTextBox.TabIndex = 5
+        Me.ItemNoTextBox.TabIndex = 1
         '
         'SaveButton
         '
@@ -85,7 +85,7 @@ Partial Class mainForm
         Me.SaveButton.Location = New System.Drawing.Point(312, 392)
         Me.SaveButton.Name = "SaveButton"
         Me.SaveButton.Size = New System.Drawing.Size(110, 46)
-        Me.SaveButton.TabIndex = 17
+        Me.SaveButton.TabIndex = 11
         Me.SaveButton.Text = "Save"
         Me.SaveButton.UseVisualStyleBackColor = False
         '
@@ -253,6 +253,7 @@ Partial Class mainForm
         'PictureBox1
         '
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox1.Location = New System.Drawing.Point(428, 385)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(508, 112)
@@ -268,7 +269,7 @@ Partial Class mainForm
         Me.ClearButton.Location = New System.Drawing.Point(312, 444)
         Me.ClearButton.Name = "ClearButton"
         Me.ClearButton.Size = New System.Drawing.Size(110, 46)
-        Me.ClearButton.TabIndex = 18
+        Me.ClearButton.TabIndex = 12
         Me.ClearButton.Text = "Clear"
         Me.ClearButton.UseVisualStyleBackColor = False
         '
@@ -290,7 +291,7 @@ Partial Class mainForm
         Me.ItemNameTextBox.Location = New System.Drawing.Point(263, 138)
         Me.ItemNameTextBox.Name = "ItemNameTextBox"
         Me.ItemNameTextBox.Size = New System.Drawing.Size(220, 31)
-        Me.ItemNameTextBox.TabIndex = 6
+        Me.ItemNameTextBox.TabIndex = 2
         '
         'Label4
         '
@@ -311,7 +312,7 @@ Partial Class mainForm
         Me.DescriptionTextBox.Multiline = True
         Me.DescriptionTextBox.Name = "DescriptionTextBox"
         Me.DescriptionTextBox.Size = New System.Drawing.Size(220, 115)
-        Me.DescriptionTextBox.TabIndex = 7
+        Me.DescriptionTextBox.TabIndex = 3
         '
         'Label5
         '
@@ -331,7 +332,7 @@ Partial Class mainForm
         Me.QuanityTextBox.Location = New System.Drawing.Point(535, 56)
         Me.QuanityTextBox.Name = "QuanityTextBox"
         Me.QuanityTextBox.Size = New System.Drawing.Size(220, 31)
-        Me.QuanityTextBox.TabIndex = 8
+        Me.QuanityTextBox.TabIndex = 4
         '
         'Label6
         '
@@ -361,7 +362,7 @@ Partial Class mainForm
         Me.ValueTextBox.Location = New System.Drawing.Point(535, 216)
         Me.ValueTextBox.Name = "ValueTextBox"
         Me.ValueTextBox.Size = New System.Drawing.Size(220, 31)
-        Me.ValueTextBox.TabIndex = 10
+        Me.ValueTextBox.TabIndex = 6
         '
         'Label8
         '
@@ -381,7 +382,7 @@ Partial Class mainForm
         Me.SerialNumberTextBox.Location = New System.Drawing.Point(532, 296)
         Me.SerialNumberTextBox.Name = "SerialNumberTextBox"
         Me.SerialNumberTextBox.Size = New System.Drawing.Size(220, 31)
-        Me.SerialNumberTextBox.TabIndex = 11
+        Me.SerialNumberTextBox.TabIndex = 7
         '
         'CategoryTextBox
         '
@@ -391,7 +392,7 @@ Partial Class mainForm
         Me.CategoryTextBox.Location = New System.Drawing.Point(535, 138)
         Me.CategoryTextBox.Name = "CategoryTextBox"
         Me.CategoryTextBox.Size = New System.Drawing.Size(220, 31)
-        Me.CategoryTextBox.TabIndex = 9
+        Me.CategoryTextBox.TabIndex = 5
         '
         'SearchTypeButton
         '
@@ -415,7 +416,7 @@ Partial Class mainForm
         '
         Me.ItemsDataGridView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.ItemsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ItemsDataGridView.Location = New System.Drawing.Point(156, 41)
+        Me.ItemsDataGridView.Location = New System.Drawing.Point(156, 24)
         Me.ItemsDataGridView.Name = "ItemsDataGridView"
         Me.ItemsDataGridView.Size = New System.Drawing.Size(782, 165)
         Me.ItemsDataGridView.TabIndex = 1
@@ -429,7 +430,7 @@ Partial Class mainForm
         Me.AddButton.Location = New System.Drawing.Point(896, 106)
         Me.AddButton.Name = "AddButton"
         Me.AddButton.Size = New System.Drawing.Size(155, 52)
-        Me.AddButton.TabIndex = 48
+        Me.AddButton.TabIndex = 8
         Me.AddButton.Text = "Add"
         Me.AddButton.UseVisualStyleBackColor = False
         '
@@ -442,7 +443,7 @@ Partial Class mainForm
         Me.SaveCurrentButton.Location = New System.Drawing.Point(896, 164)
         Me.SaveCurrentButton.Name = "SaveCurrentButton"
         Me.SaveCurrentButton.Size = New System.Drawing.Size(155, 52)
-        Me.SaveCurrentButton.TabIndex = 49
+        Me.SaveCurrentButton.TabIndex = 9
         Me.SaveCurrentButton.Text = "Save"
         Me.SaveCurrentButton.UseVisualStyleBackColor = False
         '
@@ -455,7 +456,7 @@ Partial Class mainForm
         Me.UpdateButton.Location = New System.Drawing.Point(896, 222)
         Me.UpdateButton.Name = "UpdateButton"
         Me.UpdateButton.Size = New System.Drawing.Size(155, 52)
-        Me.UpdateButton.TabIndex = 50
+        Me.UpdateButton.TabIndex = 10
         Me.UpdateButton.Text = "Update"
         Me.UpdateButton.UseVisualStyleBackColor = False
         '

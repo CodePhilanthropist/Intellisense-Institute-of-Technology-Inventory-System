@@ -26,6 +26,10 @@ Partial Class RemarksForm
         Me.RemarksItemNoTextBox = New System.Windows.Forms.TextBox()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.LineShape7 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape6 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape5 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.LineShape4 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape3 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.LineShape2 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -39,19 +43,18 @@ Partial Class RemarksForm
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.DateExamineDateTimePicker = New System.Windows.Forms.DateTimePicker()
-        Me.LineShape4 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.LineShape5 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.LineShape6 = New Microsoft.VisualBasic.PowerPacks.LineShape()
-        Me.LineShape7 = New Microsoft.VisualBasic.PowerPacks.LineShape()
         Me.RemarksAddButton = New System.Windows.Forms.Button()
         Me.RemarksSaveButton = New System.Windows.Forms.Button()
         Me.RemarksUpdateButton = New System.Windows.Forms.Button()
         Me.RemarksDeleteButton = New System.Windows.Forms.Button()
         Me.RemarksDataGridView = New System.Windows.Forms.DataGridView()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.LineShape8 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.ReceiptnoTextBox = New System.Windows.Forms.TextBox()
         CType(Me.RemarksDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -88,10 +91,42 @@ Partial Class RemarksForm
         Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape7, Me.LineShape6, Me.LineShape5, Me.LineShape4, Me.LineShape3, Me.LineShape2, Me.LineShape1})
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape8, Me.LineShape7, Me.LineShape6, Me.LineShape5, Me.LineShape4, Me.LineShape3, Me.LineShape2, Me.LineShape1})
         Me.ShapeContainer1.Size = New System.Drawing.Size(871, 642)
         Me.ShapeContainer1.TabIndex = 11
         Me.ShapeContainer1.TabStop = False
+        '
+        'LineShape7
+        '
+        Me.LineShape7.Name = "LineShape7"
+        Me.LineShape7.X1 = 632
+        Me.LineShape7.X2 = 763
+        Me.LineShape7.Y1 = 348
+        Me.LineShape7.Y2 = 348
+        '
+        'LineShape6
+        '
+        Me.LineShape6.Name = "LineShape6"
+        Me.LineShape6.X1 = 633
+        Me.LineShape6.X2 = 764
+        Me.LineShape6.Y1 = 241
+        Me.LineShape6.Y2 = 241
+        '
+        'LineShape5
+        '
+        Me.LineShape5.Name = "LineShape5"
+        Me.LineShape5.X1 = 631
+        Me.LineShape5.X2 = 762
+        Me.LineShape5.Y1 = 120
+        Me.LineShape5.Y2 = 120
+        '
+        'LineShape4
+        '
+        Me.LineShape4.Name = "LineShape4"
+        Me.LineShape4.X1 = 564
+        Me.LineShape4.X2 = 564
+        Me.LineShape4.Y1 = 25
+        Me.LineShape4.Y2 = 453
         '
         'LineShape3
         '
@@ -219,14 +254,6 @@ Partial Class RemarksForm
         Me.DateExamineDateTimePicker.Size = New System.Drawing.Size(217, 28)
         Me.DateExamineDateTimePicker.TabIndex = 38
         '
-        'LineShape4
-        '
-        Me.LineShape4.Name = "LineShape4"
-        Me.LineShape4.X1 = 564
-        Me.LineShape4.X2 = 564
-        Me.LineShape4.Y1 = 25
-        Me.LineShape4.Y2 = 453
-        '
         'Label9
         '
         Me.Label9.AutoSize = True
@@ -261,35 +288,11 @@ Partial Class RemarksForm
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft YaHei", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(635, 383)
+        Me.Label12.Location = New System.Drawing.Point(614, 384)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(131, 28)
+        Me.Label12.Size = New System.Drawing.Size(158, 28)
         Me.Label12.TabIndex = 45
-        Me.Label12.Text = "Total Value"
-        '
-        'LineShape5
-        '
-        Me.LineShape5.Name = "LineShape5"
-        Me.LineShape5.X1 = 631
-        Me.LineShape5.X2 = 762
-        Me.LineShape5.Y1 = 120
-        Me.LineShape5.Y2 = 120
-        '
-        'LineShape6
-        '
-        Me.LineShape6.Name = "LineShape6"
-        Me.LineShape6.X1 = 633
-        Me.LineShape6.X2 = 764
-        Me.LineShape6.Y1 = 241
-        Me.LineShape6.Y2 = 241
-        '
-        'LineShape7
-        '
-        Me.LineShape7.Name = "LineShape7"
-        Me.LineShape7.X1 = 632
-        Me.LineShape7.X2 = 763
-        Me.LineShape7.Y1 = 348
-        Me.LineShape7.Y2 = 348
+        Me.Label12.Text = "TOTAL VALUE"
         '
         'RemarksAddButton
         '
@@ -347,10 +350,38 @@ Partial Class RemarksForm
         '
         Me.RemarksDataGridView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
         Me.RemarksDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.RemarksDataGridView.Location = New System.Drawing.Point(168, 475)
+        Me.RemarksDataGridView.Location = New System.Drawing.Point(35, 467)
         Me.RemarksDataGridView.Name = "RemarksDataGridView"
         Me.RemarksDataGridView.Size = New System.Drawing.Size(498, 131)
         Me.RemarksDataGridView.TabIndex = 51
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft YaHei", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(604, 497)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(202, 28)
+        Me.Label14.TabIndex = 52
+        Me.Label14.Text = "RECEIPT NUMBER"
+        '
+        'LineShape8
+        '
+        Me.LineShape8.Name = "LineShape8"
+        Me.LineShape8.X1 = 633
+        Me.LineShape8.X2 = 764
+        Me.LineShape8.Y1 = 464
+        Me.LineShape8.Y2 = 464
+        '
+        'ReceiptnoTextBox
+        '
+        Me.ReceiptnoTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ReceiptnoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.ReceiptnoTextBox.Font = New System.Drawing.Font("Microsoft Tai Le", 18.0!)
+        Me.ReceiptnoTextBox.Location = New System.Drawing.Point(601, 528)
+        Me.ReceiptnoTextBox.Name = "ReceiptnoTextBox"
+        Me.ReceiptnoTextBox.Size = New System.Drawing.Size(220, 31)
+        Me.ReceiptnoTextBox.TabIndex = 53
         '
         'RemarksForm
         '
@@ -358,6 +389,8 @@ Partial Class RemarksForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(871, 642)
+        Me.Controls.Add(Me.ReceiptnoTextBox)
+        Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.RemarksDataGridView)
         Me.Controls.Add(Me.RemarksDeleteButton)
         Me.Controls.Add(Me.RemarksUpdateButton)
@@ -383,7 +416,7 @@ Partial Class RemarksForm
         Me.Controls.Add(Me.ShapeContainer1)
         Me.MaximizeBox = False
         Me.Name = "RemarksForm"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "RemarksForm"
         CType(Me.RemarksDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -420,4 +453,7 @@ Partial Class RemarksForm
     Friend WithEvents RemarksUpdateButton As System.Windows.Forms.Button
     Friend WithEvents RemarksDeleteButton As System.Windows.Forms.Button
     Friend WithEvents RemarksDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents LineShape8 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents ReceiptnoTextBox As System.Windows.Forms.TextBox
 End Class

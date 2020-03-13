@@ -75,6 +75,8 @@ Public Class mainForm
     Private Sub AddButton_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AddButton.Click
         CountBorrowID()
 
+        Me.ItemNameTextBox.Clear()
+        Me.CategoryTextBox.Clear()
         Me.DescriptionTextBox.Clear()
         Me.QuanityTextBox.Clear()
         Me.ValueTextBox.Clear()
@@ -109,5 +111,24 @@ Public Class mainForm
 
     Private Sub SearchTypeButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SearchTypeButton.Click
         SearchType.Show()
+    End Sub
+
+    Private Sub ItemsDataGridView_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles ItemsDataGridView.CellContentClick
+        sql = "SELECT * FROM ITEMS WHERE I_ID=" & CInt(ItemsDataGridView.CurrentCell.Value) & ""
+        cmd = New OleDbCommand(sql, con)
+        Try
+            dr = cmd.ExecuteReader()
+            dr.Read()
+            Me.ItemNoTextBox.Text = dr("I_ID")
+            Me.ItemNameTextBox.Text = dr("ITEM_NAME")
+            Me.DescriptionTextBox.Text = dr("DESCRIPTION")
+            Me.QuanityTextBox.Text = dr("QUANTITY")
+            Me.CategoryTextBox.Text = dr("CATEGORY")
+            Me.ValueTextBox.Text = dr("WORTH")
+            Me.SerialNumberTextBox.Text = dr("SERIAL_NO")
+            dr.Close()
+        Catch ex As Exception
+            MessageBox.Show(ex.Message.ToString())
+        End Try
     End Sub
 End Class
