@@ -49,44 +49,6 @@ Public Class mainForm
         PictureBox1.BackgroundImage = Nothing
     End Sub
 
-    Private Sub AddButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AddButton.Click
-        CountBorrowID()
-
-        Me.DescriptionTextBox.Clear()
-        Me.QuanityTextBox.Clear()
-        Me.ValueTextBox.Clear()
-        Me.SerialNumberTextBox.Clear()
-        Me.ItemNameTextBox.Focus()
-
-    End Sub
-
-    Private Sub SavecurrentButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SavecurrentButton.Click
-        sql = "INSERT INTO ITEMS(I_ID, ITEM_NAME, DESCRIPTION, QUANTITY, CATEGORY, WORTH, SERIAL_NO)VALUES(" & CInt(Me.ItemNoTextBox.Text) & ", '" & Me.ItemNameTextBox.Text & "', '" & Me.DescriptionTextBox.Text & "', " & CInt(Me.QuanityTextBox.Text) & ", '" & CInt(Me.CategoryTextBox.Text) & "', " & CDbl(Me.ValueTextBox.Text) & ", '" & Me.SerialNumberTextBox.Text & "' )"
-        cmd = New OleDbCommand(sql, con)
-        Try
-            cmd.ExecuteNonQuery()
-            MessageBox.Show("New item has been added!")
-        Catch ex As Exception
-            MessageBox.Show(ex.Message.ToString)
-        End Try
-    End Sub
-
-
-    Private Sub SearchTypeButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SearchTypeButton.Click
-        SearchType.Show()
-    End Sub
-
-    Private Sub UpdateButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UpdateButton.Click
-        sql = "UPDATE ITEMS SET ITEM_NAME='" & ItemNameTextBox.Text & "', DESCRIPTION='" & DescriptionTextBox.Text & "', QUANTITY=" & CInt(QuanityTextBox.Text) & ", CATEGORY=" & CInt(CategoryTextBox.Text) & ", WORTH=" & CDbl(ValueTextBox.Text) & ", SERIAL_NO='" & SerialNumberTextBox.Text & "' WHERE I_ID=" & CInt(ItemNoTextBox.Text) & ""
-        cmd = New OleDbCommand(sql, con)
-        Try
-            cmd.ExecuteNonQuery()
-            MessageBox.Show("The item has been updated!")
-        Catch ex As Exception
-            MessageBox.Show(ex.Message.ToString)
-        End Try
-    End Sub
-
     Private Sub ShowItemButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         ShowItems.Show()
     End Sub
@@ -108,5 +70,44 @@ Public Class mainForm
 
     Private Sub RemarksButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RemarksButton.Click
         RemarksForm.Show()
+    End Sub
+
+    Private Sub AddButton_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AddButton.Click
+        CountBorrowID()
+
+        Me.DescriptionTextBox.Clear()
+        Me.QuanityTextBox.Clear()
+        Me.ValueTextBox.Clear()
+        Me.SerialNumberTextBox.Clear()
+        Me.ItemNameTextBox.Focus()
+
+    End Sub
+
+    Private Sub SaveCurrentButton_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SaveCurrentButton.Click
+        sql = "INSERT INTO ITEMS(I_ID, ITEM_NAME, DESCRIPTION, QUANTITY, CATEGORY, WORTH, SERIAL_NO)VALUES(" & CInt(Me.ItemNoTextBox.Text) & ", '" & Me.ItemNameTextBox.Text & "', '" & Me.DescriptionTextBox.Text & "', " & CInt(Me.QuanityTextBox.Text) & ", '" & CInt(Me.CategoryTextBox.Text) & "', " & CDbl(Me.ValueTextBox.Text) & ", '" & Me.SerialNumberTextBox.Text & "' )"
+        cmd = New OleDbCommand(sql, con)
+        Try
+            cmd.ExecuteNonQuery()
+            MessageBox.Show("New item has been added!")
+            populateItems()
+        Catch ex As Exception
+            MessageBox.Show(ex.Message.ToString)
+        End Try
+    End Sub
+
+    Private Sub UpdateButton_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UpdateButton.Click
+        sql = "UPDATE ITEMS SET ITEM_NAME='" & ItemNameTextBox.Text & "', DESCRIPTION='" & DescriptionTextBox.Text & "', QUANTITY=" & CInt(QuanityTextBox.Text) & ", CATEGORY=" & CInt(CategoryTextBox.Text) & ", WORTH=" & CDbl(ValueTextBox.Text) & ", SERIAL_NO='" & SerialNumberTextBox.Text & "' WHERE I_ID=" & CInt(ItemNoTextBox.Text) & ""
+        cmd = New OleDbCommand(sql, con)
+        Try
+            cmd.ExecuteNonQuery()
+            MessageBox.Show("The item has been updated!")
+            populateItems()
+        Catch ex As Exception
+            MessageBox.Show(ex.Message.ToString)
+        End Try
+    End Sub
+
+    Private Sub SearchTypeButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SearchTypeButton.Click
+        SearchType.Show()
     End Sub
 End Class
