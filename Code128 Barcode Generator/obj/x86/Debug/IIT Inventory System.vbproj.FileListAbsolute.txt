@@ -21,3 +21,17 @@ C:\Users\Rian\Desktop\Inventory\Code128 Barcode Generator\obj\x86\Debug\Code128_
 C:\Users\Rian\Desktop\Inventory\Code128 Barcode Generator\obj\x86\Debug\Code128_Barcode_Generator.Resources.resources
 C:\Users\Rian\Desktop\Inventory\Code128 Barcode Generator\obj\x86\Debug\IIT Inventory System.vbproj.GenerateResource.Cache
 C:\Users\Rian\Desktop\Inventory\Code128 Barcode Generator\obj\x86\Debug\Code128_Barcode_Generator.SearchType.resources
+C:\Users\Rian\Desktop\Software Project\Intellisense-Institute-of-Technology-Inventory-System\Code128 Barcode Generator\bin\Debug\IIT Inventory.exe.config
+C:\Users\Rian\Desktop\Software Project\Intellisense-Institute-of-Technology-Inventory-System\Code128 Barcode Generator\bin\Debug\IIT Inventory.exe
+C:\Users\Rian\Desktop\Software Project\Intellisense-Institute-of-Technology-Inventory-System\Code128 Barcode Generator\bin\Debug\IIT Inventory.pdb
+C:\Users\Rian\Desktop\Software Project\Intellisense-Institute-of-Technology-Inventory-System\Code128 Barcode Generator\bin\Debug\IIT Inventory.xml
+C:\Users\Rian\Desktop\Software Project\Intellisense-Institute-of-Technology-Inventory-System\Code128 Barcode Generator\obj\x86\Debug\Code128_Barcode_Generator.mainForm.resources
+C:\Users\Rian\Desktop\Software Project\Intellisense-Institute-of-Technology-Inventory-System\Code128 Barcode Generator\obj\x86\Debug\Code128_Barcode_Generator.LoginForm.resources
+C:\Users\Rian\Desktop\Software Project\Intellisense-Institute-of-Technology-Inventory-System\Code128 Barcode Generator\obj\x86\Debug\Code128_Barcode_Generator.Resources.resources
+C:\Users\Rian\Desktop\Software Project\Intellisense-Institute-of-Technology-Inventory-System\Code128 Barcode Generator\obj\x86\Debug\Code128_Barcode_Generator.SearchType.resources
+C:\Users\Rian\Desktop\Software Project\Intellisense-Institute-of-Technology-Inventory-System\Code128 Barcode Generator\obj\x86\Debug\IIT Inventory System.vbproj.GenerateResource.Cache
+C:\Users\Rian\Desktop\Software Project\Intellisense-Institute-of-Technology-Inventory-System\Code128 Barcode Generator\obj\x86\Debug\IIT Inventory.exe
+C:\Users\Rian\Desktop\Software Project\Intellisense-Institute-of-Technology-Inventory-System\Code128 Barcode Generator\obj\x86\Debug\IIT Inventory.xml
+C:\Users\Rian\Desktop\Software Project\Intellisense-Institute-of-Technology-Inventory-System\Code128 Barcode Generator\obj\x86\Debug\IIT Inventory.pdb
+C:\Users\Rian\Desktop\Software Project\Intellisense-Institute-of-Technology-Inventory-System\Code128 Barcode Generator\obj\x86\Debug\Code128_Barcode_Generator.RemarksForm.resources
+C:\Users\Rian\Desktop\Software Project\Intellisense-Institute-of-Technology-Inventory-System\Code128 Barcode Generator\obj\x86\Debug\Code128_Barcode_Generator.ShowItems.resources

@@ -43,7 +43,7 @@ Partial Class LoginForm
         '
         'Panel
         '
-        Me.Panel.BackColor = System.Drawing.Color.Firebrick
+        Me.Panel.BackColor = System.Drawing.Color.SpringGreen
         Me.Panel.Controls.Add(Me.Label4)
         Me.Panel.Controls.Add(Me.Label3)
         Me.Panel.Location = New System.Drawing.Point(0, -1)
@@ -168,7 +168,7 @@ Partial Class LoginForm
         '
         'LoginButton
         '
-        Me.LoginButton.BackColor = System.Drawing.Color.Firebrick
+        Me.LoginButton.BackColor = System.Drawing.Color.SpringGreen
         Me.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LoginButton.Font = New System.Drawing.Font("Microsoft New Tai Lue", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LoginButton.ForeColor = System.Drawing.SystemColors.ControlLightLight

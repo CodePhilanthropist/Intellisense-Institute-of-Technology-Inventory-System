@@ -10,7 +10,7 @@
     <OutputType>WinExe</OutputType>
     <StartupObject>Code128_Barcode_Generator.My.MyApplication</StartupObject>
     <RootNamespace>Code128_Barcode_Generator</RootNamespace>
-    <AssemblyName>Code128 Barcode Generator</AssemblyName>
+    <AssemblyName>IIT Inventory</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -23,7 +23,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Code128 Barcode Generator.xml</DocumentationFile>
+    <DocumentationFile>IIT Inventory.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
@@ -33,7 +33,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Code128 Barcode Generator.xml</DocumentationFile>
+    <DocumentationFile>IIT Inventory.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -106,10 +106,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="RemarksForm.Designer.vb">
+      <DependentUpon>RemarksForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RemarksForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SearchType.Designer.vb">
       <DependentUpon>SearchType.vb</DependentUpon>
     </Compile>
     <Compile Include="SearchType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowItems.Designer.vb">
+      <DependentUpon>ShowItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ShowItems.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -126,8 +138,14 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="RemarksForm.resx">
+      <DependentUpon>RemarksForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SearchType.resx">
       <DependentUpon>SearchType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowItems.resx">
+      <DependentUpon>ShowItems.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

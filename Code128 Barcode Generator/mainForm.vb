@@ -19,6 +19,7 @@ Public Class mainForm
     Private Sub mainForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         con = New OleDbConnection(ConnectionString)
         OleConnection(sql)
+        populateItems()
     End Sub
 
     Private Sub CountBorrowID()
@@ -60,7 +61,7 @@ Public Class mainForm
     End Sub
 
     Private Sub SavecurrentButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SavecurrentButton.Click
-        sql = "INSERT INTO ITEMS(I_ID, ITEM_NAME, DESCRIPTION, QUANTITY, CATEGORY, VALUES, SERIAL_NO)VALUES(" & CInt(Me.ItemNoTextBox.Text) & ", '" & Me.ItemNameTextBox.Text & "', '" & Me.DescriptionTextBox.Text & "', " & CInt(Me.QuanityTextBox.Text) & ", '" & CInt(Me.CategoryTextBox.Text) & "', " & CDbl(Me.ValueTextBox.Text) & ", '" & Me.SerialNumberTextBox.Text & "' )"
+        sql = "INSERT INTO ITEMS(I_ID, ITEM_NAME, DESCRIPTION, QUANTITY, CATEGORY, WORTH, SERIAL_NO)VALUES(" & CInt(Me.ItemNoTextBox.Text) & ", '" & Me.ItemNameTextBox.Text & "', '" & Me.DescriptionTextBox.Text & "', " & CInt(Me.QuanityTextBox.Text) & ", '" & CInt(Me.CategoryTextBox.Text) & "', " & CDbl(Me.ValueTextBox.Text) & ", '" & Me.SerialNumberTextBox.Text & "' )"
         cmd = New OleDbCommand(sql, con)
         Try
             cmd.ExecuteNonQuery()
@@ -73,5 +74,39 @@ Public Class mainForm
 
     Private Sub SearchTypeButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SearchTypeButton.Click
         SearchType.Show()
+    End Sub
+
+    Private Sub UpdateButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UpdateButton.Click
+        sql = "UPDATE ITEMS SET ITEM_NAME='" & ItemNameTextBox.Text & "', DESCRIPTION='" & DescriptionTextBox.Text & "', QUANTITY=" & CInt(QuanityTextBox.Text) & ", CATEGORY=" & CInt(CategoryTextBox.Text) & ", WORTH=" & CDbl(ValueTextBox.Text) & ", SERIAL_NO='" & SerialNumberTextBox.Text & "' WHERE I_ID=" & CInt(ItemNoTextBox.Text) & ""
+        cmd = New OleDbCommand(sql, con)
+        Try
+            cmd.ExecuteNonQuery()
+            MessageBox.Show("The item has been updated!")
+        Catch ex As Exception
+            MessageBox.Show(ex.Message.ToString)
+        End Try
+    End Sub
+
+    Private Sub ShowItemButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        ShowItems.Show()
+    End Sub
+
+    Private Sub populateItems()
+        sql = "SELECT * FROM ITEMS ORDER BY I_ID DESC"
+        cmd = New OleDbCommand(sql, con)
+        Try
+            cmd.ExecuteNonQuery()
+            da = New OleDbDataAdapter(sql, con)
+            dt = New DataTable
+            da.Fill(dt)
+            Me.ItemsDataGridView.DataSource = dt
+        Catch ex As Exception
+            MessageBox.Show(ex.Message.ToString)
+        End Try
+    End Sub
+
+
+    Private Sub RemarksButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RemarksButton.Click
+        RemarksForm.Show()
     End Sub
 End Class

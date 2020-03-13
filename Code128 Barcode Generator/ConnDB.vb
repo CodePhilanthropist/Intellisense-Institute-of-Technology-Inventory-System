@@ -13,7 +13,7 @@ Module ConnDB
         If con.State = ConnectionState.open Then
             con.Close()
         End If
-        ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Rian\Desktop\Inventory\DB\InventorySystemDB.accdb;"
+        ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Rian\Desktop\Software Project\Intellisense-Institute-of-Technology-Inventory-System\DB\InventorySystemDB.accdb;"
         con.ConnectionString = ConnectionString
         con.Open()
     End Sub

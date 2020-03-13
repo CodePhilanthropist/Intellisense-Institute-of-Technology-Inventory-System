@@ -30,7 +30,7 @@ Partial Class mainForm
         Me.ReportButton = New System.Windows.Forms.Button()
         Me.SearchButton = New System.Windows.Forms.Button()
         Me.DeployButton = New System.Windows.Forms.Button()
-        Me.PulloutButton = New System.Windows.Forms.Button()
+        Me.RemarksButton = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape6 = New Microsoft.VisualBasic.PowerPacks.LineShape()
@@ -45,7 +45,6 @@ Partial Class mainForm
         Me.AddButton = New System.Windows.Forms.Button()
         Me.SavecurrentButton = New System.Windows.Forms.Button()
         Me.UpdateButton = New System.Windows.Forms.Button()
-        Me.DeleteButton = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ItemNameTextBox = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -59,13 +58,17 @@ Partial Class mainForm
         Me.SerialNumberTextBox = New System.Windows.Forms.TextBox()
         Me.CategoryTextBox = New System.Windows.Forms.TextBox()
         Me.SearchTypeButton = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.ItemsDataGridView = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
+        CType(Me.ItemsDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ItemNoTextBox
         '
-        Me.ItemNoTextBox.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.ItemNoTextBox.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ItemNoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.ItemNoTextBox.Font = New System.Drawing.Font("Microsoft Tai Le", 18.0!)
         Me.ItemNoTextBox.Location = New System.Drawing.Point(263, 56)
@@ -93,12 +96,12 @@ Partial Class mainForm
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.Firebrick
+        Me.Panel1.BackColor = System.Drawing.Color.SpringGreen
         Me.Panel1.Controls.Add(Me.QuitButton)
         Me.Panel1.Controls.Add(Me.ReportButton)
         Me.Panel1.Controls.Add(Me.SearchButton)
         Me.Panel1.Controls.Add(Me.DeployButton)
-        Me.Panel1.Controls.Add(Me.PulloutButton)
+        Me.Panel1.Controls.Add(Me.RemarksButton)
         Me.Panel1.Location = New System.Drawing.Point(-5, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(236, 509)
@@ -107,7 +110,7 @@ Partial Class mainForm
         'QuitButton
         '
         Me.QuitButton.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.QuitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.QuitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.QuitButton.Font = New System.Drawing.Font("Swis721 BT", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.QuitButton.ForeColor = System.Drawing.Color.DarkGreen
         Me.QuitButton.Location = New System.Drawing.Point(35, 284)
@@ -120,7 +123,7 @@ Partial Class mainForm
         'ReportButton
         '
         Me.ReportButton.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ReportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ReportButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ReportButton.Font = New System.Drawing.Font("Swis721 BT", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ReportButton.ForeColor = System.Drawing.Color.DarkGreen
         Me.ReportButton.Location = New System.Drawing.Point(35, 232)
@@ -133,7 +136,7 @@ Partial Class mainForm
         'SearchButton
         '
         Me.SearchButton.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.SearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.SearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.SearchButton.Font = New System.Drawing.Font("Swis721 BT", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SearchButton.ForeColor = System.Drawing.Color.DarkGreen
         Me.SearchButton.Location = New System.Drawing.Point(35, 180)
@@ -146,7 +149,7 @@ Partial Class mainForm
         'DeployButton
         '
         Me.DeployButton.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.DeployButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.DeployButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.DeployButton.Font = New System.Drawing.Font("Swis721 BT", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DeployButton.ForeColor = System.Drawing.Color.DarkGreen
         Me.DeployButton.Location = New System.Drawing.Point(35, 128)
@@ -156,18 +159,18 @@ Partial Class mainForm
         Me.DeployButton.Text = "Available Items"
         Me.DeployButton.UseVisualStyleBackColor = False
         '
-        'PulloutButton
+        'RemarksButton
         '
-        Me.PulloutButton.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.PulloutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.PulloutButton.Font = New System.Drawing.Font("Swis721 BT", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PulloutButton.ForeColor = System.Drawing.Color.DarkGreen
-        Me.PulloutButton.Location = New System.Drawing.Point(35, 76)
-        Me.PulloutButton.Name = "PulloutButton"
-        Me.PulloutButton.Size = New System.Drawing.Size(177, 46)
-        Me.PulloutButton.TabIndex = 19
-        Me.PulloutButton.Text = "Remarks"
-        Me.PulloutButton.UseVisualStyleBackColor = False
+        Me.RemarksButton.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.RemarksButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.RemarksButton.Font = New System.Drawing.Font("Swis721 BT", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RemarksButton.ForeColor = System.Drawing.Color.DarkGreen
+        Me.RemarksButton.Location = New System.Drawing.Point(35, 76)
+        Me.RemarksButton.Name = "RemarksButton"
+        Me.RemarksButton.Size = New System.Drawing.Size(177, 46)
+        Me.RemarksButton.TabIndex = 19
+        Me.RemarksButton.Text = "Remarks"
+        Me.RemarksButton.UseVisualStyleBackColor = False
         '
         'Label3
         '
@@ -185,7 +188,7 @@ Partial Class mainForm
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.LineShape6, Me.LineShape5, Me.LineShape4, Me.LineShape3, Me.LineShape2, Me.LineShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(957, 509)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(1073, 759)
         Me.ShapeContainer1.TabIndex = 9
         Me.ShapeContainer1.TabStop = False
         '
@@ -241,7 +244,7 @@ Partial Class mainForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Tai Le", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(644, 465)
+        Me.Label1.Location = New System.Drawing.Point(633, 465)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(103, 21)
         Me.Label1.TabIndex = 12
@@ -271,39 +274,30 @@ Partial Class mainForm
         '
         'AddButton
         '
-        Me.AddButton.Location = New System.Drawing.Point(828, 68)
+        Me.AddButton.Location = New System.Drawing.Point(896, 126)
         Me.AddButton.Name = "AddButton"
-        Me.AddButton.Size = New System.Drawing.Size(108, 42)
+        Me.AddButton.Size = New System.Drawing.Size(140, 40)
         Me.AddButton.TabIndex = 12
         Me.AddButton.Text = "Add"
         Me.AddButton.UseVisualStyleBackColor = True
         '
         'SavecurrentButton
         '
-        Me.SavecurrentButton.Location = New System.Drawing.Point(828, 116)
+        Me.SavecurrentButton.Location = New System.Drawing.Point(896, 174)
         Me.SavecurrentButton.Name = "SavecurrentButton"
-        Me.SavecurrentButton.Size = New System.Drawing.Size(108, 42)
+        Me.SavecurrentButton.Size = New System.Drawing.Size(140, 40)
         Me.SavecurrentButton.TabIndex = 13
         Me.SavecurrentButton.Text = "Save"
         Me.SavecurrentButton.UseVisualStyleBackColor = True
         '
         'UpdateButton
         '
-        Me.UpdateButton.Location = New System.Drawing.Point(828, 164)
+        Me.UpdateButton.Location = New System.Drawing.Point(896, 222)
         Me.UpdateButton.Name = "UpdateButton"
-        Me.UpdateButton.Size = New System.Drawing.Size(108, 42)
+        Me.UpdateButton.Size = New System.Drawing.Size(140, 40)
         Me.UpdateButton.TabIndex = 14
         Me.UpdateButton.Text = "Update"
         Me.UpdateButton.UseVisualStyleBackColor = True
-        '
-        'DeleteButton
-        '
-        Me.DeleteButton.Location = New System.Drawing.Point(828, 212)
-        Me.DeleteButton.Name = "DeleteButton"
-        Me.DeleteButton.Size = New System.Drawing.Size(108, 42)
-        Me.DeleteButton.TabIndex = 15
-        Me.DeleteButton.Text = "Delete"
-        Me.DeleteButton.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -317,7 +311,7 @@ Partial Class mainForm
         '
         'ItemNameTextBox
         '
-        Me.ItemNameTextBox.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.ItemNameTextBox.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ItemNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.ItemNameTextBox.Font = New System.Drawing.Font("Microsoft Tai Le", 18.0!)
         Me.ItemNameTextBox.Location = New System.Drawing.Point(263, 138)
@@ -337,7 +331,7 @@ Partial Class mainForm
         '
         'DescriptionTextBox
         '
-        Me.DescriptionTextBox.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.DescriptionTextBox.BackColor = System.Drawing.SystemColors.ControlDark
         Me.DescriptionTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.DescriptionTextBox.Font = New System.Drawing.Font("Microsoft Tai Le", 18.0!)
         Me.DescriptionTextBox.Location = New System.Drawing.Point(262, 223)
@@ -358,7 +352,7 @@ Partial Class mainForm
         '
         'QuanityTextBox
         '
-        Me.QuanityTextBox.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.QuanityTextBox.BackColor = System.Drawing.SystemColors.ControlDark
         Me.QuanityTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.QuanityTextBox.Font = New System.Drawing.Font("Microsoft Tai Le", 18.0!)
         Me.QuanityTextBox.Location = New System.Drawing.Point(535, 56)
@@ -388,7 +382,7 @@ Partial Class mainForm
         '
         'ValueTextBox
         '
-        Me.ValueTextBox.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.ValueTextBox.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ValueTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.ValueTextBox.Font = New System.Drawing.Font("Microsoft Tai Le", 18.0!)
         Me.ValueTextBox.Location = New System.Drawing.Point(535, 216)
@@ -408,7 +402,7 @@ Partial Class mainForm
         '
         'SerialNumberTextBox
         '
-        Me.SerialNumberTextBox.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.SerialNumberTextBox.BackColor = System.Drawing.SystemColors.ControlDark
         Me.SerialNumberTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.SerialNumberTextBox.Font = New System.Drawing.Font("Microsoft Tai Le", 18.0!)
         Me.SerialNumberTextBox.Location = New System.Drawing.Point(532, 296)
@@ -418,7 +412,7 @@ Partial Class mainForm
         '
         'CategoryTextBox
         '
-        Me.CategoryTextBox.BackColor = System.Drawing.SystemColors.ScrollBar
+        Me.CategoryTextBox.BackColor = System.Drawing.SystemColors.ControlDark
         Me.CategoryTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.CategoryTextBox.Font = New System.Drawing.Font("Microsoft Tai Le", 18.0!)
         Me.CategoryTextBox.Location = New System.Drawing.Point(535, 138)
@@ -435,12 +429,31 @@ Partial Class mainForm
         Me.SearchTypeButton.Text = "..."
         Me.SearchTypeButton.UseVisualStyleBackColor = True
         '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.SpringGreen
+        Me.Panel2.Controls.Add(Me.ItemsDataGridView)
+        Me.Panel2.Location = New System.Drawing.Point(-2, 503)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(1075, 254)
+        Me.Panel2.TabIndex = 33
+        '
+        'ItemsDataGridView
+        '
+        Me.ItemsDataGridView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ItemsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ItemsDataGridView.Location = New System.Drawing.Point(156, 41)
+        Me.ItemsDataGridView.Name = "ItemsDataGridView"
+        Me.ItemsDataGridView.Size = New System.Drawing.Size(782, 165)
+        Me.ItemsDataGridView.TabIndex = 1
+        '
         'mainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ClientSize = New System.Drawing.Size(957, 509)
+        Me.ClientSize = New System.Drawing.Size(1073, 759)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.SearchTypeButton)
         Me.Controls.Add(Me.CategoryTextBox)
         Me.Controls.Add(Me.Label8)
@@ -454,7 +467,6 @@ Partial Class mainForm
         Me.Controls.Add(Me.DescriptionTextBox)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ItemNameTextBox)
-        Me.Controls.Add(Me.DeleteButton)
         Me.Controls.Add(Me.UpdateButton)
         Me.Controls.Add(Me.SavecurrentButton)
         Me.Controls.Add(Me.AddButton)
@@ -467,12 +479,15 @@ Partial Class mainForm
         Me.Controls.Add(Me.ItemNoTextBox)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "mainForm"
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Main Menu"
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        CType(Me.ItemsDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -488,13 +503,12 @@ Partial Class mainForm
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents ClearButton As System.Windows.Forms.Button
     Friend WithEvents DeployButton As System.Windows.Forms.Button
-    Friend WithEvents PulloutButton As System.Windows.Forms.Button
+    Friend WithEvents RemarksButton As System.Windows.Forms.Button
     Friend WithEvents ReportButton As System.Windows.Forms.Button
     Friend WithEvents SearchButton As System.Windows.Forms.Button
     Friend WithEvents AddButton As System.Windows.Forms.Button
     Friend WithEvents SavecurrentButton As System.Windows.Forms.Button
     Friend WithEvents UpdateButton As System.Windows.Forms.Button
-    Friend WithEvents DeleteButton As System.Windows.Forms.Button
     Friend WithEvents LineShape2 As Microsoft.VisualBasic.PowerPacks.LineShape
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents ItemNameTextBox As System.Windows.Forms.TextBox
@@ -514,5 +528,7 @@ Partial Class mainForm
     Friend WithEvents QuitButton As System.Windows.Forms.Button
     Friend WithEvents CategoryTextBox As System.Windows.Forms.TextBox
     Friend WithEvents SearchTypeButton As System.Windows.Forms.Button
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents ItemsDataGridView As System.Windows.Forms.DataGridView
 
 End Class
